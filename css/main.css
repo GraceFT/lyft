@@ -1,7 +1,8 @@
 *{outline: 1px solid rgba(0,255,0,0.5);}
 .portada{
     text-align: center;
-    background: url(img/driving-holiday-road-trip.jpg);background-size: cover;
+    background-image: url(../img/driving-holiday-road-trip.jpg);
+    background-size: cover;
 }
 .portada img{
     width: 10%;
