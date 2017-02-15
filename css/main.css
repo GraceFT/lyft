@@ -1,4 +1,4 @@
-/**{outline: 1px solid rgba(0,255,0,0.5);}*/
+*{outline: 1px solid rgba(0,255,0,0.5);}
 .background{
     text-align: center;
     background-image: url(../images/background-1.jpg);
@@ -8,11 +8,17 @@
     background-attachment: fixed;
 }
 .portada img{
-    width: 10%;
+    width: 100px;
     margin: auto;
     margin: 50px auto;
 }
 .buttons{padding: 18%;}
+/*****COUNTRY************/
+.search{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 /******USER'S INFORMATION**/
 .log img{
     text-align: center;
