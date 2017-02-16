@@ -6,6 +6,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
      <!-- Bootstrap -->
@@ -13,34 +14,38 @@
 
 </head>
 <body onload="init()">
-    <header>
-        <div class="container text-center">
-              <a href="init.html"><i class="glyphicon glyphicon-chevron-left arrow"></i></a>
-            
-                <h2>Sign up</h2>
-                  <f3>Join now for free ride credit</f3>
-              <hr>
-        </div>
-    </header>
+<!-----------------------Header--------------------------------->
+<header>
+    <div class="container text-center">
+        <a href="init.html"><i class="glyphicon glyphicon-chevron-left arrow"></i></a>
+        <h2>Sign up</h2>
+        <p>Join now for free ride credit</p>
+        <hr>
+    </div>
+</header>
+<!-----------------------Country with code and number--------------------------------->
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-md-offset-1 col-md-10">     
+            <div class="col-md-12">     
                 <div class="input-group">
                     <div class="input-group-btn">
-                        <button type="button" class="btn btn-default" aria-expanded="false" id="button"><a href="country-select.html"><img src="images/flags/flat/16/Peru.png" alt=""><span class="caret"></span></a></button>
+                        <button type="button" class="btn btn-default" aria-expanded="false" id="button"><a href="country-select.html"><img src="images/flags/flat/16/Peru.png" alt="" id="flag-country"><span class="caret"></span></a></button>
+                        <button type="button" class="btn btn-default" aria-expanded="false" id="button"><span id="code-country">+51</span></button>
                     </div><!-- /btn-group -->
 
-                    <input type="text" class="form-control" aria-label="..." placeholder="123456" button>
-                </div><!-- /input-group -->    
+                    <input type="text" class="form-control" placeholder="123456789" id="user-number">
+                </div><!-- /input-group -->
+            <br>   
             <p class="text-center">We'll send a text to verify your phone</p>
         </div>
         </div>
-        <div class="text-center next">
-    <a href="info-user.html"><h3>Next</h3></a>
-</div>
     </div>
-    </section>
+</section>
+<!---------------------------BUTTON NEXT--------------------->
+<div class="text-center next">
+    <a href="info-user.html">Next</a>
+</div>
 <script src="js/signup.js"></script>
 </body>
 </html>

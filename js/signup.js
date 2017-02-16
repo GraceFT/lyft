@@ -1,15 +1,15 @@
 function init(){
     var button=document.getElementById("button");
-    button.addEventListener("click",);
+    button.addEventListener("click",onButtonClick);
     if(localStorage.getItem("country")){
         setCountry();
     }
 }
 function setCountry(){
-    var cname=document.getElementById("country-name");
-    cname=
+    var fname=document.getElementById("flag-country");
+    fname.src=
 }
-function onbuttonclick(){
+function onButtonClick(){
     var input=document.getElementById("numbers");
     
     
