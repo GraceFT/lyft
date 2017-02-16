@@ -14,7 +14,7 @@ var jsoncountry='[{"nombre": "Australia","code":"+61", "image":"images/flags/fla
 
 var paises = JSON.parse(jsoncountry);
 var long = paises.length;
-    console.log(paises[5].image);
+    //console.log(paises[5].image);
 
     for(var i=0; i<long;i++)
     {
