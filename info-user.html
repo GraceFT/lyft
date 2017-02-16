@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/main.css">
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
      <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
 
@@ -25,10 +23,11 @@
                   <div class="form-group">
                     <div class="input-group user">
                         <span class=" input-group-addon icon"><span class="glyphicon glyphicon-user"></span></span> 
-                        <input name="name" id="name" type="text" class="form-control" placeholder="Name">
+                        <input name="name" id="name" type="text" class="form-control" placeholder="Name" autofocus="" onkeyup="validateName()">
                         <span class="input-group-addon color"></span>
-                      <input name="lastname" id="lastname" type="text" required class="form-control" placeholder="Lastname">
+                      <input name="lastname" id="lastname" type="text" class="form-control" placeholder="Lastname" autofocus="" onkeyup="validateLastName()">
                     </div>
+                    <div id="avise">---</div>
                   </div>
                   <div class="input-group user">
                     <span class="input-group-addon icon"><span class="glyphicon glyphicon-envelope"></span></span>
@@ -42,10 +41,11 @@
             <input type="checkbox">I agree to Lyft's <a href=""terms>Terms of Service</a>
         </div>
 <!---------------------------BUTTON NEXT--------------------->
-        <div class="text-center next">
-            <a href="app.html">Next</a>
+        <div class="text-center next" id="button-next">
+            <span onclick="validateForm()">Next</span>
         </div>
     </div>
-    </header>
+</header>
+<script src="js/info-user.js"></script>
 </body>
 </html>

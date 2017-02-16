@@ -1,16 +1,11 @@
 function init(){
-    var button=document.getElementById("button");
-    button.addEventListener("click",onButtonClick);
-    if(localStorage.getItem("country")){
-        setCountry();
-    }
-}
-function setCountry(){
-    var fname=document.getElementById("flag-country");
-    fname.src = 
-}
-function onButtonClick(){
-    var input=document.getElementById("numbers");
+    console.log(init);
+    /*var imgSrc= document.getElementById("flag-country");
+    var codePais= document.getElementById("code-country");
     
+    var imagesC = localStorage.getItem("cImage");
+    var codeC = localStorage.getItem("codesPhone");
     
+    imgSrc.src= imagesC;
+    codePais.textContent= codeC;*/
 }

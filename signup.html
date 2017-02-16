@@ -3,18 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Lyft</title>
-    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-     <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-
 </head>
 <body onload="init()">
-<!-----------------------Header--------------------------------->
+<!--HEADER------------------------------------->
 <header>
     <div class="container text-center">
         <a href="init.html"><i class="glyphicon glyphicon-chevron-left arrow"></i></a>
@@ -23,7 +17,7 @@
         <hr>
     </div>
 </header>
-<!-----------------------Country with code and number--------------------------------->
+<!--section------------------------------------------------------>
 <section>
     <div class="container">
         <div class="row">
@@ -32,21 +26,22 @@
                     <div class="input-group-btn">
                         <button type="button" class="btn btn-default" aria-expanded="false" id="button"><a href="country-select.html"><img src="images/flags/flat/16/Peru.png" alt="" id="flag-country"><span class="caret"></span></a></button>
                         <button type="button" class="btn btn-default" aria-expanded="false" id="button"><span id="code-country">+51</span></button>
-                    </div><!-- /btn-group -->
+                    </div>
 
                     <input type="tel" class="form-control" placeholder="123456789" id="user-number">
-                </div><!-- /input-group -->
+                </div>
             <br>   
             <p class="text-center">We'll send a text to verify your phone</p>
         </div>
         </div>
     </div>
 </section>
-<!---------------------------BUTTON NEXT--------------------->
+<!--button---------------------------------------next-->
 <div class="text-center next">
     <a href="info-user.html">Next</a>
 </div>
-<script src="js/signup.js"></script>
-<script src="js/countries-name.js"></script>
+
+<script type="text/javascript" src="js/countries-name.js"></script>
+<script type="text/javascript" src="js/signup.js"></script>
 </body>
 </html>
