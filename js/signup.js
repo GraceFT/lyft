@@ -7,7 +7,7 @@ function init(){
 }
 function setCountry(){
     var fname=document.getElementById("flag-country");
-    fname.src=
+    fname.src = 
 }
 function onButtonClick(){
     var input=document.getElementById("numbers");

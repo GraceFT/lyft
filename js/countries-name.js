@@ -1,4 +1,17 @@
-var jsoncountry=[
+var jsoncountry='{"nombre": "Australia","phone_code": 61},
+                {"nombre": "Canada","phone_code": 1},
+                {"nombre": "China","phone_code": 86},
+                {"nombre": "France","phone_code": 33},
+                {"nombre": "India","phone_code": 91},
+                {"nombre": "Japan","phone_code": 81},
+                {"nombre": "Mexico","phone_code": 52},
+                {"nombre": "Peru","phone_code": 51},
+                {"nombre": "Puerto Rico","phone_code": 1},
+                {"nombre": "United Kingdom","phone_code": 44}',
+var c = JSON.parse(jsoncountry);
+
+console.log(c[1].nombre);
+/*
   {
     "nombre": "Afganistán",
     "name": "Afghanistan",
@@ -1967,4 +1980,4 @@ var jsoncountry=[
     "iso3": "ZWE",
     "phone_code": 263
   }
-];
+];*/
