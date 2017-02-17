@@ -20,21 +20,25 @@ function toDoAnAlert(){
         var completeCode= code + Math.floor(number);
         localStorage.setItem('avatarNumb',completeCode);
         alert("Your code: " + completeCode);
-        console.log(btn-next.href)
-    }else{
-    } 
+        var next= document.getElementById("btn-next");
+        next.href="info-user.html";
+    }
 }
 function numberLong(){
     var userNumber = document.getElementById("user-number");
+    var isVal= true;
     if(userNumber.value.length==0){
-        avise.innerHTML='<span style="color:#ff00bf; font-size:11px; font-style:italic;">Complete with your phone number</span>'
+        avise.innerHTML='<span style="color:#ff00bf; font-size:11px; font-style:italic;">Complete with your phone number</span>';
+        return isVal=false;
     }else{
-        if(userNumber.value.length > 9){
-        avise.innerHTML='<span style="color:#ff00bf; font-size:11px; font-style:italic;">Put a number less than 9 digits</span>'
+        if(userNumber.value.length > 9 || userNumber.value.length < 6){
+        avise.innerHTML='<span style="color:#ff00bf; font-size:11px; font-style:italic;">Put a number more than 6 digits and less than 9 digits</span>';
+        return isVal= false;
         }else{
         avise.innerHTML='<span style="color:green; font-size:11px; font-style:italic;">Correct Number</span>'
-        return true;
+        return isVal=true;
         }
     }
 }
+
 
