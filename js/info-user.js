@@ -5,6 +5,9 @@ validateLastName();*/
     if (valName()==true && valLastName()==true&& valEmail()==true&& valCheck()){
         var next= document.getElementById("btn_next");
         next.href="app.html";
+        localStorage.setItem("nameUser",name.value);
+        localStorage.setItem("lastnameUser",lastname.value);
+        localStorage.setItem("emailUser",email.value);
     }
 }
 //Uppercase
