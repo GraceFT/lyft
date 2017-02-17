@@ -7,7 +7,6 @@ var jsoncountry='[{"nombre": "Australia","code":"+61", "image":"images/flags/fla
 '{"nombre": "India","code": "+91","image":"images/flags/flat/16/India.png"},'+
 '{"nombre": "Japan","code": "+81", "image":"images/flags/flat/16/Japan.png"},'+
 '{"nombre": "Mexico","code": "+52", "image":"images/flags/flat/16/Mexico.png"},'+
-'{"nombre": "Peru","code": "+51", "image":"images/flags/flat/16/Peru.png"},'+
 '{"nombre": "Puerto Rico","code": "+1", "image":"images/flags/flat/16/Puerto-Rico.png"},'+
 '{"nombre": "United Kingdom","code": "+44","image":"images/flags/flat/16/United-Kingdom.png"}]';
 

@@ -11,13 +11,13 @@
 <!--HEADER------------------------------------->
 <header>
     <div class="container text-center">
-        <a href="init.html"><i class="glyphicon glyphicon-chevron-left arrow"></i></a>
+        <a href="index.html"><i class="glyphicon glyphicon-chevron-left arrow"></i></a>
         <h2>Sign up</h2>
         <p>Join now for free ride credit</p>
         <hr>
     </div>
 </header>
-<!--section------------------------------------------------------>
+<!--SECTION------------------------------------------------------>
 <section>
     <div class="container">
         <div class="row">
@@ -28,20 +28,20 @@
                         <button type="button" class="btn btn-default" id="button"><strong id="code-country">+51</strong></button>
                     </div>
 
-                    <input type="tel" class="form-control" placeholder="123456789" id="user-number">
+                    <input type="number" class="form-control" placeholder="123456789" id="user-number" onkeyup="numberLong()">
                 </div>
+                <div id="avise" class="text-center"></div>
             <br>   
             <p class="text-center">We'll send a text to verify your phone</p>
         </div>
         </div>
     </div>
 </section>
-<!--button---------------------------------------next-->
+<!--button---------------------------------------BUTTON-NEXT-->
 <div class="text-center next">
-    <a href="info-user.html">Next</a>
+    <a href="#" id="btn-next" onclick="toDoAnAlert()">Next</a>
 </div>
-
-<script type="text/javascript" src="js/countries-name.js"></script>
+<!--------------------------SCRIPT---------------------------->
 <script type="text/javascript" src="js/signup.js"></script>
 </body>
 </html>
