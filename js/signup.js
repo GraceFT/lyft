@@ -37,8 +37,4 @@ function numberLong(){
         }
     }
 }
-function passForm(){
-    if(numberLong()==true){
-        
-    }
-}
+
